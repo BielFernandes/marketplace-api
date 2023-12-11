@@ -10,16 +10,23 @@ gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
-
+gem 'rswag-api'
+gem 'rswag-ui'
 gem "tzinfo-data", platforms: %i[ windows jruby ]
-
 gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem 'ffaker'
+  gem 'rswag-specs'
   gem 'rspec-rails', '~> 6.1.0'
+end
+
+group :test do
+
+  gem 'simplecov', require: false
+
 end
 
 group :development do
 end
-
