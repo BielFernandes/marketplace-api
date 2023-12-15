@@ -4,22 +4,23 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.0'
 
-# Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
-# Use the Puma web server [https://github.com/puma/puma]
 gem 'bootsnap', require: false
 gem 'puma', '>= 5.0'
 gem 'rswag-api'
 gem 'rswag-ui'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
+gem "rack-cors"
+
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
+  gem 'factory_bot', '~> 4.8', '>= 4.8.2'
   gem 'ffaker'
+  gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.1.0'
   gem 'rswag-specs'
   gem 'rubocop', require: false
