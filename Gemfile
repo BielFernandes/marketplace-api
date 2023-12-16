@@ -14,7 +14,9 @@ gem 'rswag-api'
 gem 'rswag-ui'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
-gem "rack-cors"
+gem 'rack-cors'
+
+gem 'devise', '~> 4.9', '>= 4.9.3'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
