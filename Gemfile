@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
-gem 'rails', '~> 7.1.0'
+gem 'rails', '~> 7.0.8'
 
 gem 'pg', '~> 1.1'
 
@@ -18,7 +18,7 @@ gem "rack-cors"
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
-  gem 'factory_bot', '~> 4.8', '>= 4.8.2'
+  gem 'factory_bot_rails'
   gem 'ffaker'
   gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.1.0'
