@@ -16,11 +16,10 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 
 gem 'rack-cors'
 
-gem 'devise', '~> 4.9', '>= 4.9.3'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
-  gem 'factory_bot', '~> 4.8', '>= 4.8.2'
+  gem 'factory_bot_rails'
   gem 'ffaker'
   gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.1.0'
@@ -34,3 +33,5 @@ end
 
 group :development do
 end
+
+gem "devise", "~> 4.9"
